@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ConsoliAds-AdColony-Adapter'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'ConsoliAds-AdColony-Adapter a pod for CAAdcolony adapter'
 
 # This description is used to generate tags and improve search results.

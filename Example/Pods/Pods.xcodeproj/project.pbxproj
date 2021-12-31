@@ -118,7 +118,7 @@
 		D5AF2C2D0BE3CCBFD55108246610F696 /* ConsoliAds-AdColony-Adapter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ConsoliAds-AdColony-Adapter-umbrella.h"; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		EB01CB39B8C91139168B47CAFE7D9E17 /* ConsoliAds-AdColony-Adapter */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "ConsoliAds-AdColony-Adapter"; path = ConsoliAds_AdColony_Adapter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB01CB39B8C91139168B47CAFE7D9E17 /* ConsoliAds_AdColony_Adapter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ConsoliAds_AdColony_Adapter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F143F8624F430FFBC0030FDA900AB0BB /* Pods-ConsoliAds-AdColony-Adapter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConsoliAds-AdColony-Adapter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F3346B01D3F057860AD6BC0BC3F09F83 /* ConsoliAds-AdColony-Adapter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "ConsoliAds-AdColony-Adapter.modulemap"; sourceTree = "<group>"; };
 		F36A0A1DF4D3C4FFB29B5A7AE7C0E918 /* Pods-ConsoliAds-AdColony-Adapter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConsoliAds-AdColony-Adapter_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -331,7 +331,7 @@
 		E40227C1D71AFD36DBC2251CC6B41989 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB01CB39B8C91139168B47CAFE7D9E17 /* ConsoliAds-AdColony-Adapter */,
+				EB01CB39B8C91139168B47CAFE7D9E17 /* ConsoliAds_AdColony_Adapter.framework */,
 				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */,
 				AC61D2C1BC36D98DB602FCB56554989E /* Pods-ConsoliAds-AdColony-Adapter_Example */,
 				5BDF264AF14D90EF2133DF3AE1D21ADD /* Pods-ConsoliAds-AdColony-Adapter_Tests */,
@@ -475,7 +475,7 @@
 			);
 			name = "ConsoliAds-AdColony-Adapter";
 			productName = ConsoliAds_AdColony_Adapter;
-			productReference = EB01CB39B8C91139168B47CAFE7D9E17 /* ConsoliAds-AdColony-Adapter */;
+			productReference = EB01CB39B8C91139168B47CAFE7D9E17 /* ConsoliAds_AdColony_Adapter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -746,6 +746,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../ConsoliAds-AdColony-Adapter/ConsoliAdsAdColonyAdapter.framework\"";
 				GCC_PREFIX_HEADER = "Target Support Files/ConsoliAds-AdColony-Adapter/ConsoliAds-AdColony-Adapter-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ConsoliAds-AdColony-Adapter/ConsoliAds-AdColony-Adapter-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -965,6 +966,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../ConsoliAds-AdColony-Adapter/ConsoliAdsAdColonyAdapter.framework\"";
 				GCC_PREFIX_HEADER = "Target Support Files/ConsoliAds-AdColony-Adapter/ConsoliAds-AdColony-Adapter-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ConsoliAds-AdColony-Adapter/ConsoliAds-AdColony-Adapter-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
