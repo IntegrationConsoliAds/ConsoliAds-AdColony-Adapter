@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ConsoliAds-AdColony-Adapter'
-  s.version          = '4.7.0-1.0'
+  s.version          = '4.7.0-1.1'
   s.summary          = 'This pod is used to get adcolony adapter for adcolony ad serving after integrating Consoliads-Mediation pod.'
 
 # This description is used to generate tags and improve search results.
@@ -27,11 +27,11 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/IntegrationConsoliAds/ConsoliAds-AdColony-Adapter.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
-  s.vendored_frameworks = 'ConsoliAds-AdColony-Adapter/ConsoliAdsAdColonyAdapter.framework'
+  s.vendored_frameworks = 'ConsoliAds-AdColony-Adapter/ConsoliAdsAdColonyAdapter.xcframework'
   s.xcconfig = {"OTHER_LDFLAGS" => "-ObjC"}
 
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES', "MACH_O_TYPE" => "staticlib"}
+  s.pod_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES', "MACH_O_TYPE" => "staticlib"}
   s.static_framework = true
 
 end

@@ -1,0 +1,6 @@
+framework module ConsoliAdsAdColonyAdapter {
+  umbrella header "ConsoliAdsAdColonyAdapter.h"
+
+  export *
+  module * { export * }
+}
