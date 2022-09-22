@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ConsoliAds-AdColony-Adapter'
-  s.version          = '4.7.0-1.2'
+  s.version          = '4.9.0-v14.1.0'
   s.summary          = 'This pod is used to get adcolony adapter for adcolony ad serving after integrating Consoliads-Mediation pod.'
 
 # This description is used to generate tags and improve search results.
@@ -29,9 +29,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.vendored_frameworks = 'ConsoliAds-AdColony-Adapter/ConsoliAdsAdColonyAdapter.xcframework'
   s.xcconfig = {"OTHER_LDFLAGS" => "-ObjC"}
-
-  s.user_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES'}
-  s.pod_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES'}
   s.static_framework = true
 
 end
